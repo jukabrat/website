@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0, 0, 0, .7)), url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 700px;
+}
+.navigacija{
+    position: fixed;
+    right: 0;
+    width: 100%;
+    background-color: orange;
+    display: inline;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    opacity: 80%;
+    transition: .3s;
+    z-index: 1;
+}
+.navigacija ul li{
+    list-style: none;
+    display: inline;
+    padding-right: 100px;
+}
+.navigacija ul li a{
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 2px;
+    font-family: 'Quicksand', sans-serif;
+    transition: .4s;
+}
+.navigacija ul{
+    margin-left: 35%;
+    display: inline;
+}
+#li1{
+    padding-right: 0;
+}
+.navigacija h3{
+    display: inline;
+    color: black;
+    padding-right: 5px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    padding-left: 5px;
+    margin-left: 10px;
+    width: fit-content;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    transition: .4s;
+}
+.navigacija h3:hover{
+    color: white;
+}
+.naslovna{
+    display: inline-block;
+    position: relative;
+    top: 100px;
+    left:20px;
+    font-family: 'Open Sans', sans-serif;
+}
+.naslovna h1{
+    font-size: 70px;
+    color: rgb(194, 126, 0);
+    font-weight: 700;
+}
+
+.naslovna h2{
+    font-size: 50px;
+    border-bottom: 2px solid orangered;
+    padding-bottom: 2px;
+    padding-right: 4px;
+    width: fit-content;
+    color: orangered;
+    font-weight: 400;
+}
+.naslovna h3{
+    font-size: 25px;
+    color: white;
+    font-weight: 400;
+}
+.naslovna h2, img{
+    display: inline;
+}
+.naslovna img{
+    position: relative;
+    top: 20px;
+}
+.onama{
+    position: relative;
+    top: 400px;
+}
+.onama p{
+    display: flex;
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Open Sans', sans-serif;
+}
+.onama h2{
+    font-family: 'Open Sans', sans-serif;
+}
+.kontak{
+    background-color: orange;
+    position: relative;
+    top: 600px;
+}
+.kontak p{
+    opacity: 60%;
+    transition: .4s;
+}
+.kontak p:hover{
+    opacity: 100%;
+}
+.navigacija:hover{
+    opacity: 100%;
+}
+.navigacija ul li a:hover{
+    border-bottom: 1px solid black;
+}
+.navigacija img, ul li a{
+    display: inline;
+}
+.navigacija img{
+    display: none;
+}
+
+@media only screen and (max-width: 1300px) {
+    .navigacija ul {
+      margin-left: 30%;
+    }
+  }
+
+@media only screen and (max-width: 1200px) {
+    .navigacija ul li a {
+        display: none;
+    }
+    .navigacija img{
+        display: block;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }
+    body{
+        background: linear-gradient(rgba(0,0,0,.7), rgba(0, 0, 0, .7)), url("bg2.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 700px;
+    }
+    .naslovna{
+        width: 100%;
+    }
+    .naslovna h1{
+        font-size: 5vw;
+        margin-left: 30%;
+        margin-right: 0;
+        padding-right: 0;
+    }
+    .naslovna h2{
+        font-size: 3vw;
+    }
+    .naslovna h3{
+        font-size: 3vw;
+        color: white;
+    }
+    .naslovna img{
+        display: none;
+    }
+    .onama{
+        top: 500px;
+    }
+ }
+@media only screen and (max-width: 900px) {
+    body{
+        background: none;
+        background-color: rgb(255, 250, 241);
+    }
+    .naslovna h3{
+        color: black;
+    }
+ }
+
